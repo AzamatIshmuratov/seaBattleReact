@@ -6,7 +6,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <div className = "nameGame">Морской бой (одиночные корабли)</div>    
     <App />
+    <button id = "reload" onClick = {() => {document.location.reload()}}>Начать заново</button>
   </React.StrictMode>,
   document.getElementById('root')
 );

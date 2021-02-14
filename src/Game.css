@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+}
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  user-select: none;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status1 {
+  margin-bottom: 10px;
+}
+.status2 {
+  margin-bottom: 15px;
+}
+
+.square {
+  background: rgb(206, 236, 214);
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 30px;
+  width: 30px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+#divRule{
+  margin-top: 10px;
+}
+
+.nextGamer{
+  margin-bottom: 20px;
+}
+
+.game-board{
+  display: flex;
+  grid-template-columns: 50% 50%;
+  column-gap: 40px;
+}
+
+.namePlayer{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  background: burlywood;
+}
+
+.nameGame{
+  margin-bottom: 10px;
+  background:rgb(149, 211, 166);
+  font-size: 22px;
+  border-radius: 30%;
+  width: 34%;
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+}
+
+.computer{
+  background: #E0FFFF;
+}
+
+.position{
+  position: relative;
+}
+
+.statusWin{
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 160px;
+  width: 200px;
+  font-size: 30px;
+  text-align: center;
+  background: rgb(101, 60, 197);
+  border-radius: 20%;
+}
+
+.colorize{
+  background: green;
+}
+
+#reload{
+  margin-top: 20px;
+}
+#reload:hover{
+  color: red;
+  transform: scale(1.1);
+}
